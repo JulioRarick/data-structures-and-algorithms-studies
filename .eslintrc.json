@@ -1,0 +1,12 @@
+{
+    "extends": [ "@juliorarickorg/eslint-config/node" ],
+    "plugins": [ "simple-import-sort" ],
+    "rules": {
+        "simple-import-sort/imports": "error"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+    }
+}
