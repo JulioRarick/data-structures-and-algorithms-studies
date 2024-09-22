@@ -1,13 +1,13 @@
 interface StackContract<ElementType> {
-  push(element: ElementType): void
-  pop(): ElementType | undefined
-  peek(): ElementType | undefined
-  isEmpty(): boolean
-  size(): number
-  clear(): void
+  push: (element: ElementType) => void
+  pop: () => ElementType | undefined
+  peek: () => ElementType | undefined
+  isEmpty: () => boolean
+  size: () => number
+  clear: () => void
 }
 
-export class Stack<ElementType> implements StackContract<ElementType> {
+export class StackArray<ElementType> implements StackContract<ElementType> {
   private items: ElementType[]
 
   constructor() {
